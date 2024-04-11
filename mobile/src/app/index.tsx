@@ -2,6 +2,8 @@ import { Meals } from '@/components/meals'
 import { Percent } from '@/components/percent'
 import { View, Image, Text } from 'react-native'
 
+export const VALUE = 90.86
+
 export default function Home () {
   return (
     <View className='flex-1 bg-base-gray-100 text-base-gray-700 px-6 py-8 gap-9'>
@@ -15,7 +17,7 @@ export default function Home () {
         />
       </View>
 
-      <Percent value={90.86}/>
+      <Percent value={VALUE}/>
 
       <Meals />
     </View>
